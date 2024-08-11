@@ -5,7 +5,7 @@ const EscPosEncoder = require('esc-pos-encoder');
 let encoder = new EscPosEncoder({ 
     imageMode: 'raster' 
 });
-
+ 
 async function encodeImage(imagePath) {
     return new Promise((resolve, reject) => {
         fs.readFile(imagePath, (err, data) => {
